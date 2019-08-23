@@ -1,0 +1,316 @@
+/home/pi/.local/lib/python2.7/site-packages/pymysql/cursors.py:170: Warning: (1265, "Data truncated for column 'time' at row 1")
+  result = self._query(query)
+Handler initialised
+MQTT client object created
+Callbacks assigned
+Connection to broker: 
+True
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=17, event=u'interval', temperature=24.63)
+2019-08-23T16:30:55.740435319Z
+2019-08-23  17:30:55 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=25, event=u'interval', temperature=24.75)
+2019-08-23T16:41:24.291116636Z
+2019-08-23  17:41:24 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=16, event=u'interval', temperature=25)
+2019-08-23T16:41:53.383270338Z
+2019-08-23  17:41:53 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.69)
+2019-08-23T16:44:30.623812426Z
+2019-08-23  17:44:30 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=24.44)
+2019-08-23T16:45:02.90332788Z
+2019-08-23  17:45:02 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24.5)
+2019-08-23T16:47:45.148706408Z
+2019-08-23  17:47:45 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=16, event=u'interval', temperature=24.88)
+2019-08-23T16:57:59.911567073Z
+2019-08-23  17:57:59 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.56)
+2019-08-23T16:58:20.211063438Z
+2019-08-23  17:58:20 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.63)
+2019-08-23T17:00:22.129031817Z
+2019-08-23  18:00:22 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=24.31)
+2019-08-23T17:01:41.069644245Z
+2019-08-23  18:01:41 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24.38)
+2019-08-23T17:04:34.446555844Z
+2019-08-23  18:04:34 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=15, event=u'interval', temperature=24.75)
+2019-08-23T17:14:06.33857004Z
+2019-08-23  18:14:06 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.5)
+2019-08-23T17:15:16.052687025Z
+2019-08-23  18:15:16 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.44)
+2019-08-23T17:16:13.566478843Z
+2019-08-23  18:16:13 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=24.19)
+2019-08-23T17:18:19.132859827Z
+2019-08-23  18:18:19 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24.25)
+2019-08-23T17:21:23.743826245Z
+2019-08-23  18:21:23 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=15, event=u'interval', temperature=24.63)
+2019-08-23T17:30:12.768511215Z
+2019-08-23  18:30:12 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.38)
+2019-08-23T17:32:04.91995893Z
+2019-08-23  18:32:04 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.38)
+2019-08-23T17:32:11.901995575Z
+2019-08-23  18:32:11 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=24.13)
+2019-08-23T17:34:57.097587642Z
+2019-08-23  18:34:57 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24.19)
+2019-08-23T17:38:12.970404185Z
+2019-08-23  18:38:12 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=16, event=u'interval', temperature=24.56)
+2019-08-23T17:46:18.987681354Z
+2019-08-23  18:46:18 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.31)
+2019-08-23T17:47:56.218379909Z
+2019-08-23  18:47:56 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.31)
+2019-08-23T17:49:07.683051099Z
+2019-08-23  18:49:07 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=24)
+2019-08-23T17:51:35.054732316Z
+2019-08-23  18:51:35 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24.13)
+2019-08-23T17:55:02.152543297Z
+2019-08-23  18:55:02 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=15, event=u'interval', temperature=24.44)
+2019-08-23T18:02:25.211159374Z
+2019-08-23  19:02:25 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.19)
+2019-08-23T18:03:47.480157422Z
+2019-08-23  19:03:47 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.31)
+2019-08-23T18:06:03.278880612Z
+2019-08-23  19:06:03 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=23.94)
+2019-08-23T18:08:13.014902558Z
+2019-08-23  19:08:13 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24)
+2019-08-23T18:11:51.284682021Z
+2019-08-23  19:11:51 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=15, event=u'interval', temperature=24.38)
+2019-08-23T18:18:31.534268049Z
+2019-08-23  19:18:31 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=21, event=u'interval', temperature=24.13)
+2019-08-23T18:19:38.699424435Z
+2019-08-23  19:19:38 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.19)
+2019-08-23T18:22:59.044631205Z
+2019-08-23  19:22:59 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_004
+bartlett_workshop_environmental
+MSG(battery=3300, light=16, event=u'interval', temperature=23.88)
+2019-08-23T18:24:50.87414566Z
+2019-08-23  19:24:50 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_007
+bartlett_workshop_environmental
+MSG(battery=3306, light=16, event=u'interval', temperature=24)
+2019-08-23T18:28:40.312228664Z
+2019-08-23  19:28:40 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_003
+bartlett_workshop_environmental
+MSG(battery=3332, light=16, event=u'interval', temperature=24.31)
+2019-08-23T18:34:37.656623114Z
+2019-08-23  19:34:37 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_005
+bartlett_workshop_environmental
+MSG(battery=3292, light=20, event=u'interval', temperature=24.06)
+2019-08-23T18:35:29.866422629Z
+2019-08-23  19:35:29 BST+0100
+connect
+execute
+Received uplink from: 
+ttn_env_006
+bartlett_workshop_environmental
+MSG(battery=3292, light=24, event=u'interval', temperature=24.13)
+201
