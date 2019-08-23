@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>API Information</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style_api.css">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+            <div id="container">
+            <h1>
+                API Bartlett Workshop
+            </h1>
+            <h2>
+            Data Endpoints
+            </h2>
+            <h3>Tables</h3>
+            <p>
+                api/table?table= <a href="http://127.0.0.1:5000/api/table?table=ttn_env" target="_BLANK">Example</a><br/>
+                <b>Returns all rows from a table</b>
+            </p>
+            <h3>Dates</h3>
+            <p>
+                api/table?table=XX,start=XXXX-XX-XX <a href="http://127.0.0.1:5000/api/table?table=ttn_env&start=2019-07-22" target="_BLANK">Example</a><br/>
+                <b>Returns all rows from a table from or between one day</b>
+            </p>
+            <p>
+                api/table?table=XX,start=XXXX-XX-XX,end=XXXX-XX-XX <a href="http://127.0.0.1:5000/api/table?table=ttn_env&start=2019-07-22&end=2019-07-22" target="_BLANK">Example</a><br/>
+                <b>Returns all rows from a table from or between one day</b>
+            </p>
+            <h3>Realtime</h3>
+            <p>
+                api/realtime/env <a href="http://127.0.0.1:5000/api/realtime/env" target="_BLANK">Example</a><br/>
+                <b>Returns realtime temperature and light info</b>
+            </p>
+        </div>
+    </body>
+</html>
+        

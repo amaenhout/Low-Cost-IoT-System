@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bartlett Workshop</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <!-- high chart js -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+	<!-- Sidebar -->
+	<ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+
+		<!-- Sidebar - Brand -->
+		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+			<div class="sidebar-brand-icon">
+				<i class="fab fa-pied-piper-alt"></i>
+			</div>
+		<div class="sidebar-brand-text mx-3">Bartlett Workshop</div>
+		</a>
+	
+		<!-- Divider -->
+		<hr class="sidebar-divider my-0">
+			
+		<!-- Nav Item - Dashboard -->
+		<li class="nav-item active">
+			<a class="nav-link" href="index">
+			<i class="fas fa-fw fa-home"></i>
+			<span>Home</span></a>
+		</li>
+						
+		<!-- Nav Item - Dashboard -->
+		<li class="nav-item active">
+		<a class="nav-link" href="dashboard">
+			<i class="fas fa-fw fa-tachometer-alt"></i>
+			<span>Dashboard</span></a>
+		</li>
+		
+		
+		<!-- Divider -->
+		<hr class="sidebar-divider">
+
+		<!-- Heading -->
+		<div class="sidebar-heading">
+		Graphs
+		</div>
+
+		<!-- Nav Item - Pages Collapse Menu -->
+		<li class="nav-item">
+				<a class="nav-link" href="environmental">
+						<i class="fas fa-fw fa-leaf"></i>
+						<span>Environmental</span>
+				</a>
+				<a class="nav-link" href="motion">
+						<i class="fas fa-fw fa-expand-arrows-alt"></i>
+					<span>Motion</span>
+				</a>
+				<a class="nav-link" href="pir">
+					<i class="fas fa-fw fa-male"></i>
+					<span>Pir</span>
+				</a>
+			</li>
+			<!-- Divider -->
+			<hr class="sidebar-divider">
+
+		<!-- Sidebar Toggler (Sidebar) -->
+		<div class="text-center d-none d-md-inline">
+		<button class="rounded-circle border-0" id="sidebarToggle"></button>
+		</div>
+	</ul>
+	<!-- End of Sidebar -->    
+
+	<!-- Content Wrapper -->
+	<div id="content-wrapper" class="d-flex flex-column">
+
+	  <!-- Main Content -->
+	  <div id="content">
+
+		<!-- Topbar -->
+		<nav class="navbar navbar-expand navbar-light bg-white">
+
+		</nav>
+		<!-- End of Topbar -->
+
+		<!-- Begin Page Content -->
+		<div class="container-fluid">
+
+		<!-- Page Heading -->
+		<div class="d-sm-flex align-items-center justify-content-between mb-4">
+		<h1 class="h3 mb-0 text-danger">Motion - Application</h1>
+		<h2 class="h4 mb-0 text-gray-800">situation on: {{date}}</h1>
+		</div>
+
+		<div class="row">
+           
+			<!-- Pie Chart -->
+			{% if dict %}
+			{% for key, values in dict.items():  %}
+            <div class="col-xl-4 col-lg-4">
+              <div class="card shadow mb-4 ">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold">Heatmap - {{key}}</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+						<script>
+							var heatmap_values = {{dict|safe}}
+							var key = {{key|tojson}}
+							console.log(heatmap_values)
+						</script>
+						
+						<div id="{{key}}" style="min-width: 280px; height: 280px; margin: 0 auto"></div>
+						<script src="/js/mot_heatmap.js"></script>
+
+                  </div>
+                </div>
+              </div>
+			</div>
+			{% endfor %}
+			{% endif %}
+		<!--close row  -->
+		</div>
+		<!-- /.container-fluid -->
+
+	  </div>
+	  <!-- End of Main Content -->
+
+	  <!-- Footer -->
+	  <footer class="sticky-footer bg-white">
+		<div class="container my-auto">
+		  <div class="copyright text-center my-auto">
+			<span>Copyright &copy; Your Website 2019</span>
+		  </div>
+		</div>
+	  </footer>
+	  <!-- End of Footer -->
+
+	</div>
+	<!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+	<i class="fas fa-angle-up"></i>
+  </a>
+
+	<!-- Bootstrap core JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+
+	<script src="/js/admin.js"></script>
+	<!-- <script src="/js/test.js"></script> -->
+	<script src="/js/temperature_overview.js"></script>
+	<script src="/js/light_overview.js"></script>
+  	<!-- light -->
+
+</body>
+
+</html>
