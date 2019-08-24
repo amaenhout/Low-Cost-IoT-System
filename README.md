@@ -14,13 +14,13 @@ The arduino file are created for three different applications
 When downloading the python flask folder on your local machine
 
 Dashboard: 
-![alt text](Images/webpage_dashboard.png "Dashboard")
+![alt text](Images/Website/webpage_dashboard.png "Dashboard")
 
 Graphs - Environmental: 
-![alt text](Images/webpage_env.png "Dashboard")
+![alt text](Images/Website/webpage_env.png "Dashboard")
 
 Graphs - Motion: 
-![alt text](Images/webpage_mot.png "Dashboard")
+![alt text](Images/Website/webpage_mot.png "Dashboard")
 
 Graphs - Pir: 
-![alt text](Images/webpage_pir.png "Dashboard")
+![alt text](Images/Website/webpage_pir.png "Dashboard")
