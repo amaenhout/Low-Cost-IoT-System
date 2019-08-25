@@ -7,7 +7,8 @@ The API documentation provides more inforamtion about how to use the set up API'
 ### get data last week
 
 
-/api/table
+
+/api/table\
 
 arguments
 table
