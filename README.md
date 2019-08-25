@@ -14,35 +14,52 @@ The things you will need to buy and install inorder to make use of the system ar
     * [Gateway's]()
 3. Get a Raspberry Pi Model 3+ B
     * [Raspberry Pi]()
-4. Create an account on AWS
+4. Install Arduino IDE
+    * [Arduino]()
+5. Create an account on AWS
     * [AWS Free Tier]()
 
 
 ### Installing 
+The next thing in this project is to install the different hardware and software. 
+
+#### Arduino
+The first software that is needed in this projects is the Arduino IDE. This sopen source software makes it possible to control the microcontrollers. To make use of the Things network licrocontrollers, the library needs to be installed: 
 
 #### Microcontrollers
-As you will find in the Arduino folder, the are three different applications:
-1. Environmental:
-    * [Node](https://www.thethingsnetwork.org/docs/devices/node/)
-    * [Uno](https://www.thethingsnetwork.org/docs/devices/uno/)
-2. Look if there is an LoRaWAN Gateway nearby -> website
-    * [Gateway's]()
-3. Get a Raspberry Pi Model 3+ B
-    * [Raspberry Pi]()
-4. Create an account on AWS
-    * [AWS Free Tier]()
+After, in the Arduino folder, the are three different applications:
 
-fork the created arduino files on: https://www.thethingsnetwork.org/docs/devices/node/
+the environmental application which captures the most basic information the node can give; temperature, light level and the battery level of the node. 
 
+The Motion application,
 
-explain the three different ones
-
+The PIR application,
 #### Raspberry Pi
+##### configuration
+````bash
+sudo raspi−config
+````
+##### remote it
+````bash
+sudo apt−get install connectd
+sudo connectd installer
+````
 
+##### Mariadb
+````bash
+sudo apt−get install mysql−server 
+sudo mysql secure installation
+sudo mysql −u root−p
+````
 
+##### Crontab
+````bash
+crontab -e
+````
+#### AWS
+After creating the free tier account on AWS one can start to use the Relational Database services. 
+Installment: 
 
-Arduino - Files
-As this project makes use of different microcontrollers multiple Arduino scripts are created. 
 
 ## Python - Files
 
