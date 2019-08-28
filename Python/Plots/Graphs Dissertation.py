@@ -24,8 +24,8 @@ data = data_w1.append(data_w2)
 loc = data.loc[:,["dev_id","battery","time"]]
 plotall = loc.groupby(["dev_id","time"])["battery"].mean().unstack("dev_id")
 plotall.index = pd.to_datetime(plotall.index)
-
-plotall.plot(title='Battery Level After 12 days')
+plotall = plotall.loc['2019-08-12':'2019-08-23']
+plotall.plot(title='Battery Level After 2 weeks')
 
 
 # 4.3.1 ---------------------- ENV  ----------------------
@@ -59,17 +59,18 @@ data_w1
 url  = 'http://127.0.0.1:5000/api/table?table=ttn_env&week=34&filter=0'
 data_w2 = getdata(url)
 data = data_w1.append(data_w2)
-
 # Temperature
 loc = data.loc[:,["dev_id","temperature","time"]]
 plotall = loc.groupby(["dev_id","time"])["temperature"].mean().unstack("dev_id")
 plotall.index = pd.to_datetime(plotall.index)
+plotall = plotall.loc['2019-08-12':'2019-08-23']
 plotall.plot(title='Temperature Last 2 weeks',legend=reversed)
 
 #Light
 loc = data.loc[:,["dev_id","light","time"]]
 plotall = loc.groupby(["dev_id","time"])["light"].mean().unstack("dev_id")
 plotall.index = pd.to_datetime(plotall.index)
+plotall = plotall.loc['2019-08-12':'2019-08-23']
 plotall.plot(title='Light Last 2 weeks')
 
 
