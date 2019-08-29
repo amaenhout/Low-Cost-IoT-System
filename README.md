@@ -83,13 +83,16 @@ exit
 #### AWS
 As we also want to have a cloud database that store our data, make use of the AWS free tier. Here, create an RDS database with the necessary tables. 
 
-## Python - Files
-The most crucial script are created in python, wihtin the python folder the different files are accessable. That are needed for this project
+## Python - Files - ttn2mysql
+The most crucial script are created in python, wihtin the Python/ttn2mysql folder the different files are accessable.
 
 
+## Python Flask
+After the creation of all these tables, some [API endpoints](API/README.MD) are created for this projects. 
+
+Also a webframe work is developed by running the python flask app. The follwing images show the end results of this flask app. 
 
 
-<!-- 
 ## Python Flask Web App
 Download the python flask folder on your local machine. 
 
@@ -103,4 +106,4 @@ Graphs - Motion:
 ![alt text](Images/Website/webpage_mot.png "Dashboard")
 
 Graphs - Pir: 
-![alt text](Images/Website/webpage_pir.png "Dashboard") -->
+![alt text](Images/Website/webpage_pir.png "Dashboard")
