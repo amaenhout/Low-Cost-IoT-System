@@ -11,6 +11,9 @@ Get the data for per appicaltion for a particular week. Here, you can use if you
 
 **Parameters** : YES
 
+* table = ttn_env / ttn_mot / ttn_pir
+* week = weeknumber
+* filter = 1 or 0
 ### Success Response
 
 **Code** : `200 OK`
