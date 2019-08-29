@@ -85,6 +85,7 @@ As we also want to have a cloud database that store our data, make use of the AW
 
 ## Python - Files - ttn2mysql
 The most crucial script are created in python, wihtin the Python/ttn2mysql folder the different files are accessable.
+These files need to be scheduled using crontab on the raspberry Pi.
 
 
 ## Python Flask
