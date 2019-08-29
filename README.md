@@ -92,9 +92,8 @@ After the creation of all these tables, some [API endpoints](API/README.MD) are 
 
 Also a webframe work is developed by running the python flask app. The follwing images show the end results of this flask app. 
 
+These endpoints and webpages will only work if you download the python flask files and start the falsk app, using the terminal. 
 
-## Python Flask Web App
-Download the python flask folder on your local machine. 
 
 Dashboard: 
 ![alt text](Images/Website/webpage_dashboard.png "Dashboard")
