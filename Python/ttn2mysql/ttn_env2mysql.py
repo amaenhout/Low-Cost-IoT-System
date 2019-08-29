@@ -6,9 +6,8 @@ import iso8601
 from pytz import timezone
 
 #ttn
-app_id = "bartlett_workshop_environmental"
-access_key = "ttn-account-v2.NzzcjEpi3XrT84qV1LmQRJgxPED3H5qIRix8ET5ASAU"
-
+app_id = "YOUR_APP_ID"
+access_key = "YOUR_AK"
 #date format
 fmt = "%Y-%m-%d  %H:%M:%S %Z%z"
 
@@ -46,10 +45,10 @@ def uplink_callback(msg, client):
     print ">>>>>>>>>", code, message
         
   #connect to rds amazon
-  rds_host = "bartlett-workshop.cejtaaej7sbz.eu-west-2.rds.amazonaws.com"
-  name ="arthur"
-  password ="Amemvs02#"
-  db_name="bartlett_workshop"
+  rds_host = "rds_host"
+  name ="user"
+  password ="user123"
+  db_name="db_name"
   
   try:
       

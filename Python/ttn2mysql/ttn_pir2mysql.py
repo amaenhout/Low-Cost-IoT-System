@@ -11,9 +11,8 @@ from sqlalchemy import create_engine
 
 
 #change app and access key to application
-app_id = "bartlett_workshop_pir"
-access_key = "ttn-account-v2.labLSUQjwJYMoDuZhL2v8kDVu4ICI4CAlN1N7D_KxdQ"
-
+app_id = "YOUR_APP_ID"
+access_key = "YOUR_AK"
 
 
 #date format
@@ -66,10 +65,10 @@ def uplink_callback(msg, client):
             print(">>>>>>>>>", code, message)
         
         #database
-        rds_host = "localhost"
-        name ="ttn"
-        password ="Amemvs02"
-        db_name="bartlett_workshop"
+        rds_host = "rds_host"
+        name ="user"
+        password ="user123"
+        db_name="db_name"
 
         conn = pymysql.connect(rds_host,user = name, passwd = password, db = db_name,connect_timeout = 5)
 
@@ -91,12 +90,12 @@ def uplink_callback(msg, client):
           
         #push to amazon------------------------
         #connect to rds amazon
-        rds_host = "bartlett-workshop.cejtaaej7sbz.eu-west-2.rds.amazonaws.com"
-        name ="arthur"
-        password ="Amemvs02#"
-        db_name="bartlett_workshop"
+        rds_host = "rds_host"
+        name ="user"
+        password ="user123"
+        db_name="db_name"
         
-        engine = create_engine('mysql+pymysql://arthur:Amemvs02#@bartlett-workshop.cejtaaej7sbz.eu-west-2.rds.amazonaws.com:3306/bartlett_workshop?charset=utf8mb4')
+        engine = create_engine('mysql+pymysql://'+name+':'+password+'@'+rds_host+':3306/'+db_name+'?charset=utf8mb4')
         
         #push to local server
         try:

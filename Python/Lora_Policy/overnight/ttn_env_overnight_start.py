@@ -1,9 +1,8 @@
 import ttn
 
 #change app and access key to application
-app_id = "bartlett_workshop_environmental"
-access_key = "ttn-account-v2.NzzcjEpi3XrT84qV1LmQRJgxPED3H5qIRix8ET5ASAU"
-
+app_id = "YOUR_APP_ID"
+access_key = "YOUR_AK"
 # handlerclient class constructor
 handler = ttn.HandlerClient(app_id, access_key)
 print("Handler initialised")
